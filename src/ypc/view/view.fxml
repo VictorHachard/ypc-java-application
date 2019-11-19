@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ypc.controller.Controller">
+   <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+      <children>
+          <!-- Add Url Label -->
+          <Label text="URL: " />
+          <!-- Add Url Text Field -->
+          <TextField fx:id="tfUrl" prefHeight="40" />
+          <!-- Add Url button -->
+          <Button onAction="#DownloadButton" text="Download" />
+          <Button onAction="#StopButton" text="Stop" />
+      </children>
+      <padding>
+         <Insets left="10.0" right="10.0" top="10.0" />
+      </padding>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+          <Button text="Log" />
+          <Button text="History" />
+          <Button text="Queue" />
+          <Button text="Configuration" />
+      </children>
+   </HBox>
+   <TextArea fx:id="taLog" prefHeight="200.0" prefWidth="200.0" />
+</VBox>
